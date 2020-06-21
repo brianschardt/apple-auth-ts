@@ -1,4 +1,4 @@
-declare module "apple-auth" {
+declare module "apple-auth-ts" {
   export interface AppleAuthConfig {
     client_id: string;
     team_id: string;
@@ -6,7 +6,7 @@ declare module "apple-auth" {
     key_id: string;
     scope: string;
   }
-  export interface AppleClientSecret{
+  export interface AppleClientSecret {
     _config: AppleAuthConfig,
     _privateKeyLocation: string,
     _privateKeyMethod: string
