@@ -1,11 +1,12 @@
 {
   "name": "apple-auth-ts",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Sign in with Apple for NodeJS",
-  "main": "src/apple-auth.js",
-  "types": "src/apple-auth.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/ananay/apple-auth/issues"
   },
-  "homepage": "https://github.com/ananay/apple-auth#readme"
+  "homepage": "https://github.com/ananay/apple-auth#readme",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "typescript": "^3.9.5"
+  }
 }

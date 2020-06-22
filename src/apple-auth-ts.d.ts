@@ -25,7 +25,7 @@ declare module "apple-auth-ts" {
   export interface AppleAuthError {
     error: "invalid_request" | "invalid_client" | "invalid_grant" | "unauthorized_client" | "unsupported_grant_type" | "invalid_scope";
   }
-  export default class AppleAuth {
+  export class AppleAuth {
     constructor(config: AppleAuthConfig, privateKeyLocation: string, privateKeyMethod: string)
     public _state: string;
     _tokenGenerator: AppleClientSecret;
